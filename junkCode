@@ -1,0 +1,216 @@
+
+                	
+                	
+                	
+                	
+
+	/*				//int c = screen.getPixel((int)x, (int)y);
+
+
+					TranslateAnimation arrowAnimation = new TranslateAnimation(slideEvent1.getX(), 330, slideEvent1.getY(),slideEvent1.getY());
+					
+					//  Toast.makeText(AngryBirdKiller.this, "Left Swipe", 8000).show();
+					
+					Path p = new Path();
+					RectF arc = new RectF(0, 0, screenwidth, screenheight);
+					p.addOval(arc, Path.Direction.valueOf("ovals"));
+					float m2 = 1.57f;
+					float angle = (m2-m1)/(1+(m1*m2));
+					angle = (float)(3.14*angle)/180;
+					canvas.drawArc(arc, m1, angle, true, paint);
+					canvas.drawLine(e1.getX(), e1.getY(), screenwidth, y, paint);
+					Log.v("AngryBirdKiller", "angle: " + angle);
+					imgArrow.setAnimation(arrowRotate);
+					imgArrow.startAnimation(arrowRotate);
+					//     TranslateAnimation arrowAnimation = new TranslateAnimation(e1.getX(), screenwidth, e1.getY(),e1.getY());
+					canvas.drawLine(e1.getX(), e1.getY(), screenwidth, e1.getY(), paint);
+
+					arrowAnimation = (TranslateAnimation) AnimationUtils.loadAnimation(AngryBirdKiller.this, R.anim.arrow);
+					arrowAnimation.setDuration(400);
+					imgArrow.startAnimation(arrowAnimation);
+					canvas.drawBitmap(bitmapArrow, e2.getX(), y, paint);
+					// canvas.drawLine(e1.getX(), e1.getY(), screenwidth, e1.getY(), p);
+					double t = (300-e1.getX())/(screenwidth-e1.getX())*400;
+					timeHit = t+timeDelay;
+					double totalDistanceTarget = screenheight;
+
+					// 	if(e1.getY()-((700*200)/5000)<40){
+					//	if(((300-e1.getX())/(310-e1.getX())*700)==(e1.getY()*25)){
+					//if25*e1.getY()==700){
+					double velocityTarget = totalDistanceTarget/5000;
+					Log.v("AngryBirdKiller", "velocityTarget:" + velocityTarget);
+
+					double targetTop = ((velocityTarget*timeHit))-40;
+					double targetBottom = ((velocityTarget*timeHit)) + 50;
+
+					Log.v("AngryBirdKiller", "Time Delay:" + timeDelay);
+					Log.v("AngryBirdKiller", "screenheight:" + screenheight);
+					Log.v("AngryBirdKiller", "screenwidth:" + screenwidth);
+					Log.v("AngryBirdKiller", "Time to hit:" + timeHit);
+					Log.v("AngryBirdKiller", "Point of intersection:" + e1.getY());
+					Log.v("AngryBirdKiller", "target location top:" + targetTop);
+					Log.v("AngryBirdKiller", "target location bottom:" + targetBottom);
+
+
+					
+					//poiY = (m1*e1.getX()) +e1.getY() + (m1*centerX);
+
+
+					Log.v("AngryBirdKiller", "### Got HIT!" + poiX+ " , " +poiY);
+					PointF point = new PointF(poiX, poiY);
+					canvas.drawLine(centerX, screenheight, centerX, 0, paint);
+					//  RectF bird = new RectF((centerX-radius), top, right, bottom);
+
+
+
+					float poiX;// = 321 + (m1*e1.getX()) + e1.getY()
+					float poiY;// = (float) ((1.57*poiX) - 321)
+
+					poiX = (float) ((m1*e1.getX()+e1.getY()+(1.57*centerX) - centerY)/(1.57 - m1));
+					poiY = (float) ((1.57*(poiX-centerX))+centerY);
+
+					if(poiX>(centerX-radius-2) && poiY>(centerY-radius-2) && poiX<(centerX+radius+2) && poiY<(centerY+radius+2)){
+
+
+						Log.v("AngryBirdKiller", "### Got HIT!" + poiX+ " , " +poiY);
+
+
+						paint.setColor(Color.RED);
+						canvas.drawPoint(poiX, poiY, paint);
+
+						hitCount++;
+
+
+						canvas.drawCircle(centerX+30+hitCount, centerY+30+hitCount, 4, paint);
+						canvas.drawCircle(centerX-30+hitCount, centerY-30+hitCount, 4, paint);
+						canvas.drawCircle(centerX+50+hitCount, centerY+50+hitCount, 2, paint);
+						canvas.drawCircle(centerX-50, centerY-50, 2, paint);
+
+						canvas.drawCircle(centerX+70+hitCount, centerY+50+hitCount, 4, paint);
+						canvas.drawCircle(centerX-70+hitCount, centerY-50+hitCount, 4, paint);
+						canvas.drawCircle(centerX+55+hitCount, centerY+55+hitCount, 2, paint);
+						canvas.drawCircle(centerX-55+hitCount, centerY-55+hitCount, 2, paint);
+
+						canvas.drawCircle(centerX+40+hitCount, centerY+40+hitCount, 4, paint);
+						canvas.drawCircle(centerX-40+hitCount, centerY-40+hitCount, 4, paint);
+						canvas.drawCircle(centerX+60+hitCount, centerY+60+hitCount, 2, paint);
+						canvas.drawCircle(centerX-60+hitCount, centerY-60+hitCount, 2, paint);
+
+						canvas.restoreToCount(saveCount);
+						paint.setColor(Color.BLACK);
+						canvas.drawLine(e1.getX(), e1.getY(), screenwidth, y, paint);
+						paint.setColor(Color.WHITE);
+
+
+						txtScore.setText("Score: " + hitCount);
+					}
+
+
+
+
+*/
+				
+					
+				/*	imgArrow.setImageBitmap(bitmapArrow);
+					imgArrow.startAnimation(arrowAnimation);
+					imgArrow.setVisibility(ImageView.VISIBLE);
+					bitmapArrow = Bitmap.createBitmap(40,20,Bitmap.Config.ARGB_8888);
+					imgArrow =(ImageView)findViewById(R.id.imageArrow);
+					imgArrow.setBackgroundResource(R.drawable.arrowimage);
+					imgArrow.setImageBitmap(bitmapArrow);
+					canvas.drawBitmap(bitmapArrow, 10, 120, paint);
+
+					bitmapTarget = Bitmap.createBitmap(300,50,Bitmap.Config.ARGB_8888);
+					imgTarget =(ImageView)findViewById(R.id.imageTarget);
+					imgTarget.setBackgroundResource(R.drawable.angrybirds);
+					imgTarget.setImageBitmap(bitmapTarget);
+
+					canvas.drawBitmap(bitmapTarget, centerX, centerY, paint);
+*/
+					
+					if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE) {}  
+
+
+
+
+					//canvas.drawBitmap(bitmapTarget, centerX, centerY, paint);
+
+
+
+
+
+
+					/*         	
+                    	if(c==arrowColor){
+
+                        	Log.v("AngryBird", "######Color Match");
+                        	Toast toast = Toast.makeText(AngryBirdKiller.this, "Color Match!!!", 8000);
+                        	toast.show();
+
+                        }
+
+                        	Thread threadCalculations = new Thread(new Runnable() {
+
+    							@Override
+    							public void run() {
+    								// TODO Auto-generated method stub
+
+    							}
+    						});
+
+
+                        	mHandler.postDelayed(threadCalculations, (long)t);
+
+
+					 */
+					//Log.v("AngryBirdKiller", "Time Start:" + timeDelay);
+
+
+					/*	
+					 */
+
+
+
+
+
+
+					/*
+                    	if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
+                            return false;*/
+					// right to left swipe
+
+
+					/*
+                    	if(e1.getY()>targetTop && e1.getY()<targetBottom){
+
+                    		imgTarget.setVisibility(ImageView.INVISIBLE);
+                    		Toast.makeText(AngryBirdKiller.this, "Bird HIT!!", 8000).show();
+                    		Log.v("AngryBirdKiller", "Bird Hit!!");
+                    		paint.setColor(Color.WHITE);
+                    		canvas.drawBitmap(bitmapTarget, 300, e1.getY(), paint);
+                    		paint.setColor(Color.RED);
+                    		//canvas.drawCircle(370, e1.getY(), 20, paint);
+                    		//Thread.sleep((long) t);
+                    		imgTarget.clearAnimation();
+                    		canvas.drawBitmap(bitmapTarget, 300, e1.getY(), paint);
+                    		TranslateAnimation birdHitAnimation = new TranslateAnimation(330, screenwidth, e1.getY(), e1.getY());
+                    		birdHitAnimation.setDuration(300);
+                    		TranslateAnimation birdHitAnimation2 = new TranslateAnimation(330, screenwidth, e1.getY(), e1.getY());
+                    		birdHitAnimation.setDuration(300);
+                    		imgArrow.startAnimation(birdHitAnimation);
+                    		//imgTarget.setVisibility(ImageView.VISIBLE);
+                    		canvas.drawLine(e1.getX(), e1.getY(), 360, e1.getY(), paint);
+                    		canvas.drawText("Score: ", 0, 0, paint);
+
+
+                    	}
+
+					 */
+
+
+
+
+					/*else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE) {
+                        Toast.makeText(AngryBirdKiller.this, "Right Swipe", 8000).show();
+                        canvas.drawLine(e1.getX(), e1.getY(), screenwidth, e1.getY(), p);
+                    }*/
